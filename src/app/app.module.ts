@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AddContactComponent } from './add-contact/add-contact.component';
-import { AppRoutingModule } from './app-routing.module';
-import { ContactListComponent } from './contact-list/contact-list.component';
+import { AddContactComponent } from './pages/components/add-contact/add-contact.component';
+import { ContactListComponent } from './pages/components/contact-list/contact-list.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './route/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -17,8 +17,7 @@ import { ContactListComponent } from './contact-list/contact-list.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    BrowserModule 
+    ReactiveFormsModule
   ],
   providers: [HttpClient],
   bootstrap: [AppComponent]
